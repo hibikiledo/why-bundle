@@ -1,6 +1,12 @@
 {
   "name": "why-bundle",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "src/index.js",
+  "license": "MIT",
+  "bin": {
+    "why-bundle": "src/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
 }
