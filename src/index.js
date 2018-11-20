@@ -7,7 +7,7 @@ program
   .option("-s, --stats <path_to_stats_file>", "Specify stats file to read from")
   .option(
     "-c, --chunk <chunk_name>",
-    "Name of the chunk (Support regular expression)"
+    "Name of the chunk"
   )
   .option(
     "-m, --module <module_name>",
