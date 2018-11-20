@@ -1,10 +1,14 @@
 {
   "name": "why-bundle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "bin": {
     "why-bundle": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hibikiledo/why-bundle"
   },
   "dependencies": {
     "commander": "^2.19.0"
