@@ -26,7 +26,7 @@ function buildDependencyGraph(module, modules) {
 function report(graph, moduleName, path) {
   // base case, has reach the top module
   if (graph[moduleName].length === 0) {
-    console.log(path);
+    console.log(path.concat(moduleName));
     return;
   }
 
@@ -69,7 +69,7 @@ module.exports.run = function({ stats, chunkName, moduleName }) {
   }
 
   const module = modules[0];
-  const dependencyGraph = buildDependencyGraph(module, chunk.modules)
+  const dependencyGraph = buildDependencyGraph(module, chunk.modules);
 
   report(dependencyGraph, module.name, []);
 };
